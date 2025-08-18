@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "io.github.naatin777.intervaltimer"
-        minSdk = 29
+        minSdk = 31
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
