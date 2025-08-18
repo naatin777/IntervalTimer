@@ -1,4 +1,4 @@
-package io.github.naatin777.intervaltimer
+package io.github.naatin777.intervaltimer.addtimer
 
 import androidx.fragment.app.viewModels
 import android.os.Bundle
@@ -6,14 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import io.github.naatin777.intervaltimer.R
 
-class LicenseFragment : Fragment() {
+class AddTimerFragment : Fragment() {
 
     companion object {
-        fun newInstance() = LicenseFragment()
+        fun newInstance() = AddTimerFragment()
     }
 
-    private val viewModel: LicenseViewModel by viewModels()
+    private val viewModel: AddTimerViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +26,6 @@ class LicenseFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_license, container, false)
+        return inflater.inflate(R.layout.fragment_add_timer, container, false)
     }
 }

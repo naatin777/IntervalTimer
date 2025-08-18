@@ -1,7 +1,8 @@
-package io.github.naatin777.intervaltimer
+package io.github.naatin777.intervaltimer.settings
 
 import android.os.Bundle
 import androidx.preference.PreferenceFragmentCompat
+import io.github.naatin777.intervaltimer.R
 
 class SettingsFragment : PreferenceFragmentCompat() {
 

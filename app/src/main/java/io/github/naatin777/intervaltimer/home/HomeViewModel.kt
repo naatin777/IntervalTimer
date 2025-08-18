@@ -1,4 +1,4 @@
-package io.github.naatin777.intervaltimer
+package io.github.naatin777.intervaltimer.home
 
 import androidx.lifecycle.ViewModel
 
