@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import io.github.naatin777.intervaltimer.R
+import io.github.naatin777.intervaltimer.databinding.FragmentAddTimerBinding
 
 class AddTimerFragment : Fragment() {
 
@@ -15,6 +16,9 @@ class AddTimerFragment : Fragment() {
     }
 
     private val viewModel: AddTimerViewModel by viewModels()
+
+    private var _binding: FragmentAddTimerBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +30,12 @@ class AddTimerFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_add_timer, container, false)
+        _binding = FragmentAddTimerBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

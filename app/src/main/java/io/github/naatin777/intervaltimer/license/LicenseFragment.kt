@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import io.github.naatin777.intervaltimer.R
+import io.github.naatin777.intervaltimer.databinding.FragmentLicenseBinding
 
 class LicenseFragment : Fragment() {
 
@@ -15,6 +16,9 @@ class LicenseFragment : Fragment() {
     }
 
     private val viewModel: LicenseViewModel by viewModels()
+
+    private var _binding: FragmentLicenseBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +30,12 @@ class LicenseFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_license, container, false)
+        _binding = FragmentLicenseBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
