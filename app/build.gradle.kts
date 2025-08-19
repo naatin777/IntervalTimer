@@ -52,6 +52,7 @@ android {
         sarifReport = true
         checkDependencies = true
     }
+    testBuildType = System.getenv("TEST_BUILD_TYPE") ?: "debug"
 }
 
 dependencies {
