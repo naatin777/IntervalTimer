@@ -47,11 +47,13 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
     lint {
         sarifReport = true
         checkDependencies = true
     }
+    testBuildType = System.getenv("TEST_BUILD_TYPE") ?: "debug"
 }
 
 dependencies {

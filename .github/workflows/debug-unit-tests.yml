@@ -1,12 +1,10 @@
-name: Unit Tests
+name: Debug Unit Tests
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   test:
@@ -42,5 +40,5 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: unit-test-reports
+          name: debug-unit-test-reports
           path: app/build/reports/tests/testDebugUnitTest/
