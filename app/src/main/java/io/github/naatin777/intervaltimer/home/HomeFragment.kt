@@ -6,8 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import io.github.naatin777.intervaltimer.R
-import io.github.naatin777.intervaltimer.databinding.FragmentAddTimerBinding
 import io.github.naatin777.intervaltimer.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
