@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Debug Unit Tests
 
 on:
   pull_request:

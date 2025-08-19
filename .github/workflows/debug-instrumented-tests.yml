@@ -1,4 +1,4 @@
-name: Instrumented Tests
+name: Debug Instrumented Tests
 
 on:
   pull_request:
