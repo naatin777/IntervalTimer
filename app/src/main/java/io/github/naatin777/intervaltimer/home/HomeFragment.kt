@@ -57,7 +57,8 @@ class HomeFragment : Fragment() {
                     true
                 }
                 R.id.menu_settings -> {
-                    Log.d("HomeFragment", "Settings menu item clicked")
+                    val action = HomeFragmentDirections.actionHomeFragmentToSettingsFragment()
+                    findNavController().navigate(action)
                     true
                 }
                 R.id.menu_about -> {
