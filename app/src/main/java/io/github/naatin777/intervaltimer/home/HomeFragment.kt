@@ -62,7 +62,8 @@ class HomeFragment : Fragment() {
                     true
                 }
                 R.id.menu_about -> {
-                    Log.d("HomeFragment", "About menu item clicked")
+                    val action = HomeFragmentDirections.actionHomeFragmentToAboutFragment()
+                    findNavController().navigate(action)
                     true
                 }
                 else -> false
