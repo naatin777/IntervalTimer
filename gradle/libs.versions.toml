@@ -15,7 +15,7 @@ lifecycleLivedataKtx = "2.9.2"
 lifecycleViewmodelKtx = "2.9.2"
 fragmentKtx = "1.8.9"
 preference = "1.2.1"
-navigationFragmentKtx = "2.9.3"
+navigationFragmentKtx = "2.9.4"
 navigationUiKtx = "2.9.3"
 safeargs = "2.9.3"
 
