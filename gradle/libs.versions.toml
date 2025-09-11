@@ -14,7 +14,7 @@ hilt = "2.57.1"
 lifecycle = "2.9.2"
 fragment = "1.8.9"
 preference = "1.2.1"
-navigation = "2.9.3"
+navigation = "2.9.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
