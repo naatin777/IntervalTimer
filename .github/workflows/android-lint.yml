@@ -33,6 +33,6 @@ jobs:
         continue-on-error: true
 
       - name: Upload sarif
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v4
         with:
           sarif_file: app/build/reports/lint-results-debug.sarif
